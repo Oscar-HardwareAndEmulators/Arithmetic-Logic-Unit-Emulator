@@ -3,9 +3,9 @@
 Project to create an ALU using a simplified instruction set -> Y86_64
 Circuits are created using Logisim and shared over github
 Instructions to be inplemented:  
-    addl - Add function  
-    subl - Subtract function  
-    andl - And function  
-    xorl - Xor function  
-    asrl - Bitwise shift right  
-    lsll - Bitwise shift left  
+<p>addl - Add function</p>  
+<p>subl - Subtract function</p>  
+<p>andl - And function</p>  
+<p>xorl - Xor function</p>  
+<p>asrl - Bitwise shift right</p>  
+<p>lsll - Bitwise shift left</p>  
