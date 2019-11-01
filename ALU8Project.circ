@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="2.14.6" version="1.0">
-This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0"/>
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2">
@@ -20,69 +20,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     </tool>
   </lib>
   <lib desc="#I/O" name="5"/>
-  <lib desc="#HDL-IP" name="6">
-    <tool name="VHDL Entity">
-      <a name="content">--------------------------------------------------------------------------------&#13;
--- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains&#13;
--- Project :&#13;
--- File    :&#13;
--- Autor   :&#13;
--- Date    :&#13;
---&#13;
---------------------------------------------------------------------------------&#13;
--- Description :&#13;
---&#13;
---------------------------------------------------------------------------------&#13;
-&#13;
-library ieee;&#13;
-  use ieee.std_logic_1164.all;&#13;
-  --use ieee.numeric_std.all;&#13;
-&#13;
-entity VHDL_Component is&#13;
-  port(&#13;
-  ------------------------------------------------------------------------------&#13;
-  --Insert input ports below&#13;
-    horloge_i  : in  std_logic;                    -- input bit example&#13;
-    val_i      : in  std_logic_vector(3 downto 0); -- input vector example&#13;
-  ------------------------------------------------------------------------------&#13;
-  --Insert output ports below&#13;
-    max_o      : out std_logic;                    -- output bit example&#13;
-    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example&#13;
-    );&#13;
-end VHDL_Component;&#13;
-&#13;
---------------------------------------------------------------------------------&#13;
---Complete your VHDL description below&#13;
-architecture type_architecture of VHDL_Component is&#13;
-&#13;
-&#13;
-begin&#13;
-&#13;
-&#13;
-end type_architecture;&#13;
-</a>
-    </tool>
-  </lib>
-  <lib desc="#TCL" name="7">
-    <tool name="TclGeneric">
-      <a name="content">library ieee;&#13;
-use ieee.std_logic_1164.all;&#13;
-&#13;
-entity TCL_Generic is&#13;
-  port(&#13;
-    --Insert input ports below&#13;
-    horloge_i  : in  std_logic;                    -- input bit example&#13;
-    val_i      : in  std_logic_vector(3 downto 0); -- input vector example&#13;
-&#13;
-	  --Insert output ports below&#13;
-    max_o      : out std_logic;                    -- output bit example&#13;
-    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example&#13;
-  );&#13;
-end TCL_Generic;&#13;
-</a>
-    </tool>
-  </lib>
-  <lib desc="#Base" name="8">
+  <lib desc="#Base" name="6">
     <tool name="Text Tool">
       <a name="text" val=""/>
       <a name="font" val="SansSerif plain 12"/>
@@ -90,23 +28,21 @@ end TCL_Generic;&#13;
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="#BFH-Praktika" name="9"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
     <a name="simrand" val="0"/>
-    <a name="tickmain" val="half_period"/>
   </options>
   <mappings>
-    <tool lib="8" map="Button2" name="Menu Tool"/>
-    <tool lib="8" map="Button3" name="Menu Tool"/>
-    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
   </mappings>
   <toolbar>
-    <tool lib="8" name="Poke Tool"/>
-    <tool lib="8" name="Edit Tool"/>
-    <tool lib="8" name="Text Tool">
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
       <a name="text" val=""/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="halign" val="center"/>
@@ -128,81 +64,75 @@ end TCL_Generic;&#13;
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="circuitnamedbox" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <wire from="(330,120)" to="(390,120)"/>
-    <wire from="(170,190)" to="(170,200)"/>
-    <wire from="(330,110)" to="(330,120)"/>
-    <wire from="(280,110)" to="(280,130)"/>
-    <wire from="(360,150)" to="(360,170)"/>
-    <wire from="(190,150)" to="(360,150)"/>
-    <wire from="(380,130)" to="(380,210)"/>
-    <wire from="(170,210)" to="(170,230)"/>
-    <wire from="(280,130)" to="(380,130)"/>
-    <wire from="(240,110)" to="(240,140)"/>
-    <wire from="(160,170)" to="(190,170)"/>
-    <wire from="(190,230)" to="(190,330)"/>
-    <wire from="(360,250)" to="(390,250)"/>
-    <wire from="(360,230)" to="(390,230)"/>
-    <wire from="(360,210)" to="(380,210)"/>
-    <wire from="(190,110)" to="(190,150)"/>
-    <wire from="(390,120)" to="(390,230)"/>
-    <wire from="(170,210)" to="(190,210)"/>
-    <wire from="(170,190)" to="(190,190)"/>
-    <wire from="(190,330)" to="(270,330)"/>
-    <wire from="(360,190)" to="(370,190)"/>
-    <wire from="(160,230)" to="(170,230)"/>
-    <wire from="(160,200)" to="(170,200)"/>
-    <wire from="(370,140)" to="(370,190)"/>
-    <wire from="(240,140)" to="(370,140)"/>
-    <comp lib="0" loc="(160,170)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="0" loc="(160,200)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="0" loc="(160,230)" name="Pin">
-      <a name="label" val="Cin"/>
-    </comp>
-    <comp lib="0" loc="(280,110)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="SF"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(190,110)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Cout"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(240,110)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="ZF"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(270,330)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Op"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp loc="(360,170)" name="ALU8"/>
-    <comp lib="0" loc="(390,250)" name="Pin">
+    <wire from="(320,110)" to="(320,180)"/>
+    <wire from="(230,110)" to="(230,180)"/>
+    <wire from="(300,210)" to="(350,210)"/>
+    <wire from="(260,180)" to="(260,190)"/>
+    <wire from="(290,180)" to="(290,190)"/>
+    <wire from="(270,170)" to="(270,190)"/>
+    <wire from="(280,170)" to="(280,190)"/>
+    <wire from="(170,220)" to="(170,240)"/>
+    <wire from="(170,180)" to="(170,200)"/>
+    <wire from="(230,180)" to="(260,180)"/>
+    <wire from="(160,210)" to="(250,210)"/>
+    <wire from="(290,180)" to="(320,180)"/>
+    <wire from="(170,220)" to="(250,220)"/>
+    <wire from="(170,200)" to="(250,200)"/>
+    <wire from="(260,170)" to="(270,170)"/>
+    <wire from="(280,170)" to="(290,170)"/>
+    <wire from="(160,240)" to="(170,240)"/>
+    <wire from="(160,180)" to="(170,180)"/>
+    <wire from="(270,230)" to="(270,280)"/>
+    <wire from="(290,110)" to="(290,170)"/>
+    <wire from="(260,110)" to="(260,170)"/>
+    <comp lib="0" loc="(350,210)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
       <a name="label" val="F"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(330,110)" name="Pin">
+    <comp lib="0" loc="(160,240)" name="Pin">
+      <a name="label" val="Cin"/>
+    </comp>
+    <comp lib="0" loc="(260,110)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
-      <a name="label" val="Overflow"/>
+      <a name="label" val="ZF"/>
       <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(320,110)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="OF"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(160,180)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(230,110)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Cout"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(300,210)" name="ALU8"/>
+    <comp lib="0" loc="(160,210)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(290,110)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="SF"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(270,280)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Op"/>
+      <a name="labelloc" val="south"/>
     </comp>
   </circuit>
   <circuit name="ALU8">
@@ -210,18 +140,17 @@ end TCL_Generic;&#13;
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="circuitnamedbox" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <comp lib="0" loc="(170,160)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="label" val="A"/>
+    <comp lib="0" loc="(360,90)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="SF"/>
+      <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(170,190)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="0" loc="(170,220)" name="Pin">
-      <a name="label" val="Cin"/>
+    <comp lib="0" loc="(340,350)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Op"/>
+      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(560,140)" name="Pin">
       <a name="facing" val="west"/>
@@ -230,34 +159,33 @@ end TCL_Generic;&#13;
       <a name="label" val="F"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(410,330)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Op"/>
-      <a name="labelloc" val="south"/>
+    <comp lib="0" loc="(170,190)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="label" val="B"/>
     </comp>
-    <comp lib="0" loc="(270,90)" name="Pin">
+    <comp lib="0" loc="(300,90)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="label" val="Cout"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(320,90)" name="Pin">
+    <comp lib="0" loc="(330,90)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="label" val="ZF"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(360,90)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="SF"/>
-      <a name="labelloc" val="north"/>
+    <comp lib="0" loc="(170,220)" name="Pin">
+      <a name="label" val="Cin"/>
     </comp>
-    <comp lib="0" loc="(430,90)" name="Pin">
+    <comp lib="0" loc="(170,160)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(390,90)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
-      <a name="label" val="OverflowFlag"/>
+      <a name="label" val="OF"/>
       <a name="labelloc" val="north"/>
     </comp>
   </circuit>
